@@ -31,21 +31,21 @@ const Todo = () => {
 
   return (
     <div className="max-w-4xl mx-auto sm:mt-8 p-4 bg-gray-100 rounded">
-      <h2 className='mt-3 mb-6 text-2xl font-bold text-center uppercase'>To-Do List application</h2>
+      <h2 className='mt-3 mb-8 text-3xl font-bold text-center uppercase'>To-Do List application</h2>
       <div className="flex items-center mb-4">
         <input
           id="addTodoInput"
-          className="flex-grow p-2 border-b-2 border-gray-300 focus:outline-none focus:border-blue-500"
+          className="flex-grow p-2 border-b-2 rounded-md border-gray-300 focus:outline-none focus:border-blue-500"
           type="text"
-          placeholder="Add Todo"
+          placeholder="Add Task"
           value={newTodoText}
           onChange={(e) => setNewTodoText(e.target.value)}
         />
         <button
-          className="ml-4 p-2 bg-blue-500 text-white rounded hover:bg-blue-600 focus:outline-none"
+          className="ml-4 p-2 bg-blue-500 rounded-md text-white rounded hover:bg-blue-600 focus:outline-none"
           onClick={handleAddTodoClick}
         >
-         <span className='flex items-center justify-center'> <BsPlus size={20} /> Add</span>
+         <span className='flex items-center justify-center'> <BsPlus size={20} /> Add Task</span>
         </button>
       </div>
 
@@ -53,9 +53,9 @@ const Todo = () => {
         <FilterButtons />
         <div className="flex items-center mb-4">
           <input
-            className="flex-grow p-2 border-b-2 border-gray-300 focus:outline-none focus:border-blue-500"
+            className="flex-grow p-2 border-b-2 rounded-md border-gray-300 focus:outline-none focus:border-blue-500"
             type="text"
-            placeholder="Search Todos"
+            placeholder="Search Task"
             value={searchTerm}
             onChange={(e) => handleSearchChange(e.target.value)}
           />

@@ -24,10 +24,10 @@ const FilterButtons = () => {
       </select>
 
       <button
-        className="text-sm px-2 py-1 bg-purple-500 text-white rounded ml-2"
+        className="text-sm px-2 py-1 bg-red-500 text-white rounded ml-2"
         onClick={() => dispatch(markAllCompleted())}
       >
-        Mark All Completed
+        Mark Tasks
       </button>
     </div>
   );
